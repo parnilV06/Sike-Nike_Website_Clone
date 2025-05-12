@@ -1,6 +1,6 @@
 # Sike-Nike_Website_Clone
 # Sike | Don't Do It | By : Parnil G Vyawahare.
-A recreational Clone of the Official Nike (IN) Homepage using pure HTML &amp; CSS .
+A recreational UI and Design Clone of the Official Nike (IN) Homepage using pure HTML &amp; CSS .
 
 A fully accurate clone of the [Nike India homepage](https://www.nike.com/in), built using only **HTML and CSS**. This project was made to sharpen my frontend skills after taking a break from web development.
 
