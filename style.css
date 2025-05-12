@@ -1,0 +1,910 @@
+/* Start of Code */
+/* Gloabal Styling */
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: Helvetica, sans-serif;
+}
+ /* Secondary (mini Nav Sction */
+.mini_nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+
+}
+.sec_nav_left{
+    padding-left: 5px;
+    margin-left: 45px;
+    padding: 5px;
+}
+.nav_sec_list{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_sec_list li{
+    padding: 5px;
+    margin: 5px;
+    border-right: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+}
+
+.nav_sec_list a{
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Main Nav Section */
+
+.nav_main{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+}
+.nav_mid{
+    justify-self: center;
+}
+.nav_mid ol{
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    padding: 10px;
+    margin: 5px;
+    list-style: none;
+
+}
+
+.nav_main ol li{
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+.nav_main a{
+    text-decoration: none;
+}
+
+.nav_main a:hover {
+    border-bottom: 2px solid black;
+}
+
+.nav_search{
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+    background-color: #F5F5F5;
+    border-radius: 25px ;
+
+}
+
+.nav_main_right_btn{
+    margin: 5px;
+    padding: 5px;
+   
+    align-items: center;
+}
+.nav_main_right_btn img{
+    padding-top: 5px;
+    margin-top: 10px
+    ;
+}
+
+.nav_main_right{
+    margin-right: 25px;
+}
+
+.main_logo{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 25px;
+}
+
+/* Pre-Hero Notification bar */
+
+.hero_noti{
+    background-color: #F5F5F5;
+    padding: 5px;
+    margin: 3px;
+}
+
+.noti1{
+    align-items: center;
+    justify-self: center;
+    line-height: 130% ;
+    text-align: center;
+    padding: 10px;
+    animation: noti_swap 5s 0s infinite reverse;
+}
+
+.noti1 h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.noti1 a{
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.noti2{
+    display: none;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    padding: 10px;
+    animation: noti_swap 5s 0s infinite alternate;
+}
+.noti2 h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.noti2 a{
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+.noti2 p{
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+}
+
+@keyframes noti_swap {
+    0% {
+        display: none;
+
+    }
+    100%{
+        display: block;
+    }
+    
+}
+
+/* hero section 1 */
+.hero_main{
+    max-width: 100vw;
+    margin-bottom: 50px;
+
+}
+
+.hero_bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_img{
+    width: 90vw ;
+    height: auto;
+    aspect-ratio: initial;
+    object-fit: cover;
+    justify-self: center;
+    margin: 10px 20px;
+
+}
+
+.hero_head{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hero_head h1{
+    font-family: 'Nike Futura ND', 'Helvetica Now Text Medium';
+    text-transform: uppercase;
+    font-size: 76px;
+    font-weight: 900;
+}
+
+.hero_head p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+
+
+}
+
+.hero_head_btn{
+    padding: 10px;
+    margin: 5px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    width: 150px;
+}
+
+/* Featured Section */
+
+.feat{
+    margin: 20px;
+}
+
+.feat_cont{
+    margin-top: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.feat_prod{
+    height: 516.828px;
+    width: 378.328px;
+}
+
+#feat_1{
+    grid-area: 1 / 1 / 2 / 2; 
+    background-image: url(/Assests/nike-just-do-it.jpg_4.jpeg);
+    background-position: center top ;
+     background-repeat: no-repeat;
+}
+
+#feat_2{
+    grid-area: 1 / 2 / 2 / 3;
+     background-image: url(/Assests/nike-just-do-it.png_6.jpeg);
+      background-position: center top ;
+     background-repeat: no-repeat;
+}
+
+
+#feat_3{
+    grid-area: 1 / 3 / 2 / 4;
+     background-image: url(/Assests/nike-just-do-it.png_7.jpeg);
+     background-position: center bottom ;
+     background-repeat: no-repeat;
+}
+
+.feat_cont_text{
+    width: inherit;
+    height: 175px;
+    position: relative;
+    top: 400px;
+    left: 20px;
+}
+
+.feat_cont_text h4{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 110px;
+}
+
+.feat_cont_text p{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.feat_prod_btn{
+    padding: 10px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 65px;
+}
+
+.feat_head h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+    margin-left: 65px;
+
+}
+
+/* Shoes Section */
+.shoes_prod{
+    margin: 100px 0px;
+}
+.shoes_cont{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1vw;
+    justify-items: center;
+    align-items: center;
+    overflow-x: scroll;
+    width: 90vw;
+    padding: 20px 10px;
+    margin: 10px 50px;
+}
+
+.shoes_item{
+    height: auto;
+    max-width: 29vw;
+    object-fit: contain;
+    object-position: center;
+}
+
+.shoes_img{
+    aspect-ratio: 1/1;
+    width: 380px;
+    height: 380px;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+#shoes_1{
+     grid-area: 1 / 1 / 2 / 2; 
+}
+
+#shoes_2{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#shoes_3{
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+#shoes_4{
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+#shoes_5{
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+#shoes_6{
+    grid-area: 1 / 6 / 2 / 7;
+}
+
+#shoes_7{
+    grid-area: 1 / 7 / 2 / 8;
+}
+
+#shoes_8{
+    grid-area: 1 / 8 / 2 / 9;
+}
+
+ #shoes_9{
+    grid-area: 1 / 9 / 2 / 10;
+ }
+
+ #shoes_10{
+    grid-area: 1 / 10 / 2 / 11;
+ }
+
+.sect_head h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+    margin-left: 65px;
+
+}
+
+.shoes_head{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn_move{
+    margin-right: 50px;
+}
+
+.move_cont{
+    display: inline-flex;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 500px;
+    height: 25px;
+    width: 25px;
+}
+
+/* Hero Section 2 */
+
+.hero_sec_img{
+    display: flex;
+    justify-content: center;
+}
+
+.hero_sec_img img{
+     width: 90vw ;
+    height: auto;
+    aspect-ratio: initial;
+    object-fit: cover;
+    justify-self: center;
+    margin: 20px 25px;
+
+}
+
+.hero_sec_cont{
+    width: 90vw;
+    margin: 20px 25px;
+    justify-items: center;
+}
+
+.hero_sec_cont h4{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0px;
+
+}
+
+.hero_sec_cont h1{
+    font-family: 'Nike Futura ND', 'Helvetica Now Text Medium';
+    font-size: 76px;
+    font-weight: 900;
+    
+}
+
+.hero_sec_cont p{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+}
+/* Special Products Section */
+
+.spl_prod_head{
+     display: flex;
+    justify-content: space-between;
+
+}
+
+.spl_prod_cont{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1vw;
+    justify-items: center;
+    align-items: center;
+    overflow-x: scroll;
+    width: 90vw;
+    padding: 20px 10px;
+    margin: 10px 50px;
+}
+
+.prod_item{
+     height: auto;
+    max-width: 29vw;
+    object-fit: contain;
+    object-position: center;
+}
+
+.spl_prod_img{
+    aspect-ratio: 1/1;
+    width: 380px;
+    height: 380px;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+
+#spl_prod_1{
+     grid-area: 1 / 1 / 2 / 2; 
+}
+
+#spl_prod_2{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#spl_prod_3{
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+#spl_prod_4{
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+#spl_prod_5{
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+#spl_prod_6{
+    grid-area: 1 / 6 / 2 / 7;
+}
+
+#spl_prod_7{
+    grid-area: 1 / 7 / 2 / 8;
+}
+
+#spl_prod_8{
+    grid-area: 1 / 8 / 2 / 9;
+}
+
+ #spl_prod_9{
+    grid-area: 1 / 9 / 2 / 10;
+ }
+
+ #spl_prod_10{
+    grid-area: 1 / 10 / 2 / 11;
+ }
+
+.cstm_l1{
+    color: #99470a;
+    padding: 5px 2px;
+
+}
+
+.cstm_l2{
+    background: linear-gradient(90deg, #e54214, #e5b01c, #34952a, #0d4fb2);
+    color: transparent;
+    background-clip: text;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 2px;
+}
+
+.det_head h3{
+    font-size: 18px;
+    font-weight: 550;
+    padding: 5px 2px;
+
+}
+
+.det_dscp p{
+    font-size: 16px;
+    font-weight: 500;
+    color:rgba(56, 56, 56, 0.781);
+    padding: 5px 2px;
+}
+
+.price{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 2px;
+}
+
+/* Sports Section */
+
+.sports_sec{
+    padding: 10px 20px;
+    margin: 200px 10px 150px 10px;
+}
+.sport_cont{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1vw;
+    justify-items: center;
+    align-items: center;
+    overflow-x: scroll;
+    width: 85vw;
+    padding: 20px 10px;
+    margin: 10px 50px;
+}
+
+.sports_item{
+     height: 300px;
+    width: 440px;
+    object-fit: contain;
+    object-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+
+}
+
+#sports_1{
+     grid-area: 1 / 1 / 2 / 2; 
+     background-image: url(/Assests/sports_1.jpeg);
+}
+
+#sports_2{
+    grid-area: 1 / 2 / 2 / 3;
+     background-image: url(/Assests/sports_2.jpeg);
+
+}
+
+#sports_3{
+    grid-area: 1 / 3 / 2 / 4;
+     background-image: url(/Assests/sports_3.jpeg);
+
+}
+
+#sports_4{
+    grid-area: 1 / 4 / 2 / 5;
+     background-image: url(/Assests/sports_4.jpeg);
+
+}
+
+#sports_5{
+    grid-area: 1 / 5 / 2 / 6;
+     background-image: url(/Assests/sports_5.jpeg);
+
+}
+
+#sports_6{
+    grid-area: 1 / 6 / 2 / 7;
+     background-image: url(/Assests/sports_6.jpeg);
+
+}
+
+#sports_7{
+    grid-area: 1 / 7 / 2 / 8;
+     background-image: url(/Assests/sports_7.jpeg);
+
+}
+
+#sports_8{
+    grid-area: 1 / 8 / 2 / 9;
+     background-image: url(/Assests/sports_8.jpeg);
+
+}
+
+.sports_sec_btn{
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Footer Section */
+
+footer{
+    padding: 20px 5px 0px 5px;
+}
+
+.footer_cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: 2fr repeat(7, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 3px;
+    margin: 10px 50px 0px 50px;
+    padding-top: 50px;
+    border-top: 2px solid #ddd8d8;
+}
+
+.foot_item{
+    padding: 0px 10px ;
+    
+}
+
+.foot_item a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.foot_item_title a{
+     color: black;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#foot_item_1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+   
+}
+#foot_item_2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+#foot_item_3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+#foot_item_4 { 
+    grid-area: 1 / 4 / 2 / 5; 
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: right;
+}
+#foot_item_5 { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+#foot_item_6 { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+#foot_item_7 { 
+    grid-area: 2 / 3 / 3 / 4; 
+}
+#foot_item_8 { 
+    grid-area: 3 / 1 / 4 / 2; 
+}
+#foot_item_9 { 
+    grid-area: 3 / 2 / 4 / 3; 
+}
+#foot_item_10 {
+     grid-area: 3 / 3 / 4 / 4;
+}
+#foot_item_11 {
+     grid-area: 4 / 1 / 5 / 2;
+}
+#foot_item_12 {
+     grid-area: 4 / 2 / 5 / 3;
+}
+#foot_item_13 {
+     grid-area: 4 / 3 / 5 / 4;
+}
+#foot_item_14 {
+     grid-area: 5 / 1 / 6 / 2;
+}
+#foot_item_15 {
+     grid-area: 5 / 2 / 6 / 3;
+}
+#foot_item_16 {
+     grid-area: 5 / 3 / 6 / 4;
+}
+#foot_item_17 {
+     grid-area: 6 / 1 / 7 / 2;
+}
+#foot_item_18 {
+     grid-area: 6 / 2 / 7 / 3;
+}
+#foot_item_19 {
+     grid-area: 6 / 3 / 7 / 4;
+}
+#foot_item_20 {
+     grid-area: 7 / 2 / 8 / 3;
+}
+#foot_item_21 {
+     grid-area: 7 / 3 / 8 / 4;
+}
+#foot_item_22 {
+     grid-area: 8 / 2 / 9 / 3;
+}
+#foot_item_23 {
+     grid-area: 8 / 3 / 9 / 4;
+}
+
+.foot_menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px 20px;
+    margin: 25px 30px;
+    gap: 25px;
+
+}
+
+.foot_menu_text{
+     color: grey;
+    font-size: 14px;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+#dropdown_foot{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 5px;
+}
+
+/* Footer Credits Section */
+
+.foot_credit{
+    margin-top: 75px;
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot_credit img{
+    width: 50px;
+    height: auto;
+    aspect-ratio: initial;
+}
+
+.proj_details{
+    border-bottom: 2px solid white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+
+.proj_details h4{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+}
+
+.proj_details h6{
+      color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+     padding: 5px;
+}
+
+.proj_details p{
+      color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+     padding: 5px;
+}
+
+.proj_details h3{
+      color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+     padding: 5px;
+}
+
+.credit_btn{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.foot_btn{
+    max-width: 15vw;
+    width: 15vw;
+    height: 50px;
+    background-color:white;
+    color: black;
+    margin: 20px;
+    border-radius: 25px;
+    border: none;
+    padding: 2px 5px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot_btn a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.foot_btn:hover{
+    background-color: rgb(190, 189, 189);
+    cursor: pointer;
+}
+
+/* --  End Of Code -- */
+/* -- Project Sike | Don't Do It . 
+Nike (IN) Website  UI and Design Clone using HTML & CSS
+Release V_1.01.01 | Date : May 12th 2025
+By : Parnil G Vyawahare . -- */
